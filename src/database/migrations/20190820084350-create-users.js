@@ -16,13 +16,13 @@ module.exports = {
         allowNull: false,
         unique: true,
       },
-      password_hard: {
+      password_hash: {
         type: Sequelize.STRING,
         allowNull: false,
       },
       provider: {
         type: Sequelize.BOOLEAN,
-        default: false,
+        defaultValue: false,
         allowNull: false,
       },
       created_at: {
